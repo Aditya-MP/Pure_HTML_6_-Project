@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Course Registration Form</title>
+  </head>
+
+  <body>
+    <h1>Course Registration Form</h1>
+
+    <form method="get">
+      <!-- FIRST NAME -->
+      <label for="fname">First Name:</label><br />
+      <input
+        type="text"
+        id="fname"
+        name="fname"
+        placeholder="Enter first name"
+        required
+        maxlength="10"
+      />
+      <br /><br />
+
+      <!-- SURNAME -->
+      <label for="sname">Surname:</label><br />
+      <input
+        type="text"
+        id="sname"
+        name="sname"
+        placeholder="Enter surname"
+      />
+      <br /><br />
+
+      <!-- MOBILE NUMBER -->
+      <label for="mobile">Mobile Number:</label><br />
+      <input
+        type="tel"
+        id="mobile"
+        name="mobile"
+        placeholder="Enter mobile number"
+        required
+      />
+      <br /><br />
+
+      <!-- EMAIL -->
+      <label for="email">Email ID:</label><br />
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="example@gmail.com"
+        required
+      />
+      <br /><br />
+
+      <!-- PASSWORD -->
+      <label for="password">Password:</label><br />
+      <input
+        type="password"
+        id="password"
+        name="password"
+        required
+      />
+      <br /><br />
+
+      <!-- CONFIRM PASSWORD -->
+      <label for="cpassword">Confirm Password:</label><br />
+      <input
+        type="password"
+        id="cpassword"
+        name="cpassword"
+        required
+      />
+      <br /><br />
+
+      <!-- DATE OF BIRTH -->
+      <label for="dob">Date of Birth:</label><br />
+      <input
+        type="date"
+        id="dob"
+        name="dob"
+        required
+      />
+      <br /><br />
+
+      <!-- AGE -->
+      <label for="age">Age:</label><br />
+      <input
+        type="number"
+        id="age"
+        name="age"
+        min="18"
+        max="65"
+        required
+      />
+      <br /><br />
+
+      <!-- GENDER (RADIO BUTTONS) -->
+      <label>Gender:</label><br />
+
+      <input
+        type="radio"
+        id="male"
+        name="gender"
+        value="male"
+        required
+      />
+      <label for="male">Male</label><br />
+
+      <input
+        type="radio"
+        id="female"
+        name="gender"
+        value="female"
+      />
+      <label for="female">Female</label><br />
+
+      <input
+        type="radio"
+        id="other"
+        name="gender"
+        value="other"
+      />
+      <label for="other">Other</label>
+      <br /><br />
+
+      <!-- COUNTRY (SELECT DROPDOWN) -->
+      <label for="country">Select Country:</label><br />
+      <select id="country" name="country" required>
+        <option value="">-- Select Country --</option>
+        <option value="India">India</option>
+        <option value="USA">USA</option>
+        <option value="Germany">Germany</option>
+        <option value="China">China</option>
+      </select>
+      <br /><br />
+
+      <!-- COURSE (CHECKBOXES) -->
+      <label>Courses Interested:</label><br />
+
+      <input
+        type="checkbox"
+        id="java"
+        name="course"
+        value="Java Full Stack"
+      />
+      <label for="java">Java Full Stack</label><br />
+
+      <input
+        type="checkbox"
+        id="mern"
+        name="course"
+        value="MERN Stack"
+      />
+      <label for="mern">MERN Stack</label><br />
+
+      <input
+        type="checkbox"
+        id="python"
+        name="course"
+        value="Python Full Stack"
+      />
+      <label for="python">Python Full Stack</label>
+      <br /><br />
+
+      <!-- DELIVERY MODE -->
+      <label>Delivery Mode:</label><br />
+
+      <input
+        type="checkbox"
+        id="online"
+        name="mode"
+        value="Online"
+      />
+      <label for="online">Online</label><br />
+
+      <input
+        type="checkbox"
+        id="offline"
+        name="mode"
+        value="Offline"
+      />
+      <label for="offline">Offline</label>
+      <br /><br />
+
+      <!-- UPLOAD RESUME -->
+      <label for="resume">Upload Resume:</label><br />
+      <input
+        type="file"
+        id="resume"
+        name="resume"
+        required
+      />
+      <br /><br />
+
+      <!-- FEEDBACK -->
+      <label for="feedback">Feedback / Comments:</label><br />
+      <textarea
+        id="feedback"
+        name="feedback"
+        rows="4"
+        cols="40"
+        placeholder="Enter your feedback"
+      ></textarea>
+      <br /><br />
+
+      <!-- BUTTONS -->
+      <input type="submit" value="Register" />
+      <input type="reset" value="Reset" />
+    </form>
+  </body>
+</html>

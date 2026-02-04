@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" id="top">
+  <head>
+    <meta charset="UTF-8" />
+    <title>HTML Final Project</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>HTML Final Project - Landing Page</h1>
+      <p>Welcome! Explore all my HTML projects below.</p>
+      <nav>
+        <a href="#projects">Projects</a> |
+        <a href="#location">Location</a> |
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <hr />
+
+    <main>
+      <!-- PROJECTS SECTION -->
+      <section id="projects">
+        <h2>My Projects</h2>
+
+        <table border="1" cellpadding="10">
+          <tr>
+            <th>Project</th>
+            <th>Title</th>
+            <th>Link</th>
+          </tr>
+
+          <tr>
+            <td>Project 1</td>
+            <td>Multimedia Blog</td>
+            <td>
+              <a href="project1.html" target="_blank">View Project</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Project 2</td>
+            <td>Lists &amp; Text Formatting</td>
+            <td>
+              <a href="project2.html" target="_blank">View Project</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Project 3</td>
+            <td>Anchor Tag Portfolio</td>
+            <td>
+              <a href="project3.html" target="_blank">View Project</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Project 4</td>
+            <td>Course Registration Form</td>
+            <td>
+              <a href="project4.html" target="_blank">View Project</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Project 5</td>
+            <td>Table Formatted Form</td>
+            <td>
+              <a href="project5.html" target="_blank">View Project</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Project 6</td>
+            <td>Travel Destination Guide (Iframe)</td>
+            <td>
+              <a href="project6.html" target="_blank">View Project</a>
+            </td>
+          </tr>
+        </table>
+      </section>
+
+      <hr />
+
+      <!-- LOCATION SECTION -->
+      <section id="location">
+        <h2>Our Location</h2>
+
+        <iframe
+          src="https://www.google.com/maps?q=bangalore&output=embed"
+          width="600"
+          height="300"
+          style="border:0;"
+          allowfullscreen
+          loading="lazy"
+        ></iframe>
+      </section>
+
+      <hr />
+
+      <!-- CONTACT SECTION -->
+      <section id="contact">
+        <h2>Contact Me</h2>
+
+        <form>
+          <label for="name">Name:</label><br />
+          <input type="text" id="name" name="name" required /><br /><br />
+
+          <label for="email">Email:</label><br />
+          <input type="email" id="email" name="email" required /><br /><br />
+
+          <label for="message">Message:</label><br />
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            cols="40"
+            required
+          ></textarea><br /><br />
+
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+    </main>
+
+    <hr />
+
+    <!-- FOOTER -->
+    <footer>
+      <p>&copy; 2026 HTML Portfolio | Built with Semantic HTML</p>
+      <a href="#top">Back to Top</a>
+    </footer>
+  </body>
+</html>
